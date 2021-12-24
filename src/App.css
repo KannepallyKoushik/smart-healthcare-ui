@@ -1,20 +1,21 @@
+@import "~antd/dist/antd.css";
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +25,105 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.login {
+  color: black;
+  height: 370px;
+  width: 400px;
+  background-color: white;
+  border-radius: 7px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-pic {
+  display: flex;
+  height: 85px;
+  width: 300px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.text-box {
+  position: relative;
+  margin: 30px 25px;
+}
+
+.text-box input:focus {
+  border-bottom: 1px solid #11998e;
+  transition: 0.3s;
+}
+
+.text-box input {
+  border: none;
+  border-bottom: 1px solid #adadad;
+  font-size: 15px;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 0 5px;
+  margin-top: 25px;
+  height: 35px;
+}
+
+.text-box input::placeholder {
+  color: #adadad;
+}
+
+.log-btn {
+  position: relative;
+  margin: 25px;
+}
+
+.login-btn {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to right, #14bdaf, #38ef7d);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.login-btn:hover {
+  background: linear-gradient(to right, #38ef7d, #14bdaf);
+}
+
+.bottom-text {
+  display: flex;
+  margin-top: 1cm;
+  font-size: 13px;
+  justify-content: space-around;
+}
+
+.vital-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.vital-card {
+  background-color: #f0eaea;
+  margin: 1em;
+  width: 100%;
+}
+
+.register-device {
+  background-color: #faf4f4;
+  border-radius: "20px";
+  padding: 35px;
+}
+
+.push-to-cloud {
+  margin-top: 30px;
+}
+
+.push-to-cloud-left {
+  background: #27221f;
+  color: white;
+  padding: 2em;
+}
+
+.push-to-cloud-right {
+  text-align: center;
 }
