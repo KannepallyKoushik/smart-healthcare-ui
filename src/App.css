@@ -118,12 +118,20 @@
   margin-top: 30px;
 }
 
-.push-to-cloud-left {
-  background: #27221f;
+.push-to-cloud-l {
+  background: linear-gradient(to left, #292826, #573131, #3a2888);
   color: white;
-  padding: 2em;
+  padding: 1em;
 }
 
 .push-to-cloud-right {
-  text-align: center;
+  background: #e8e4f3;
+  padding: 10px;
+  padding-bottom: 10em;
+}
+
+.push-to-cloud-r {
+  background: #e8e4f3;
+  padding: 10px;
+  padding-bottom: 10em;
 }

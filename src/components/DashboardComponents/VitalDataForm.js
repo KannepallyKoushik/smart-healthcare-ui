@@ -152,7 +152,7 @@ function VitalDataForm({ consumeID, setDisableButton }) {
           >
             {devices.map(({ mac_addr, alias_name }, index) => (
               <MenuItem key={index} value={mac_addr}>
-                {alias_name}
+                {alias_name}-{mac_addr}
               </MenuItem>
             ))}
           </Select>
